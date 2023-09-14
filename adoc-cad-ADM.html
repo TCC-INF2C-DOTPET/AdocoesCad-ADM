@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="adoc-cad-ADM.css">
+    <script src="adoc-cad-ADM.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://font.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!---Logo e Navbar--->
+    <header>
+        <a href="#" class="logo.img">
+            <img src="img/logo.png">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="/Home/Home.html">Home-sair</a></li>
+            <li><a href="/Home/Home.html">Sobre nós-sair</a></li>
+            <li><a href="/Catalogo/catalog.html">QUERO ADOTAR-sair</a></li>
+            <li><a href="/Doar/Doar.html">Ajude a ONG-sair</a></li>
+
+
+        </ul>
+    </header>
+
+
+
+    <!---Novos amiguinhos--->
+    <section class="new product">
+        <div class="center-text" id="amiguinhos">
+            <h2>Adoções cadastradas</h2>
+        </div>
+
+
+
+        <div class="new-content">
+<label for="buscar_data">Buscar por Data de Adoção:</label>
+<input type="date" id="buscar_data">
+<button type="button" onclick="buscarPorData()">Buscar</button>
+
+            <form id="adoption-form">
+                <label for="adotante_id">Adotante ID:</label>
+                <input type="number" id="adotante_id" name="adotante_id" required>
+
+                <label for="animal_id">Animal ID:</label>
+                <input type="number" id="animal_id" name="animal_id" required>
+
+                <label for="data_adoção">Data de Adoção:</label>
+                <input type="date" id="data_adoção" name="data_adoção" required>
+
+                <label for="funcionario_id">Funcionário ID:</label>
+                <input type="number" id="funcionario_id" name="funcionario_id" required>
+
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes"></textarea>
+
+                <button type="button" onclick="addAdoption()">Adicionar Adoção</button>
+            </form>
+
+            
+
+            <!-- Adicione esta div abaixo do seu formulário -->
+            <div id="adoptions-container"></div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!---Rodapé--->
+    <section class="contact">
+        <div class="contact-box">
+            <h4>INSTITUCIONAL</h4>
+            <li><a href="#top">Sobre a DOTPET</a></li>
+            <li><a href="#">Nosso intuito</a></li>
+        </div>
+
+        <div class="contact-box">
+            <h4>NOSSAS POLÍTICAS</h4>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de contrato</a></li>
+        </div>
+
+        <div class="contact-box">
+            <h4>ATENDIMENTO DOTPET</h4>
+            <li><a href="#">Fale conosco</a></li>
+            <li><a href="#">Ouvidoria: 55+ 11xxxx-xxxx</a></li>
+            <li><a href="#">Email: dotpet@xxxx.com</a></li>
+        </div>
+
+        <div class="contact-box">
+            <h4>BAIXE NOSSO APP</h4>
+            <a href="#" class="app">
+                <img src="img/qr.jpg">
+        </div>
+
+        <div class="contact-box">
+            <h4>DOTPET</h4>
+            <h5>Nossas redes sociais:</h5>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!---scroll--->
+    <a href="#" class="scroll-top"><i class='bx bx-chevrons-up'></i></a>
+
+    <div class="end-text">
+        <a href="/Home/Home.html">SAIR -</a>
+
+        <a href="/Perfil-ADM/perfil-adm.html">MEU PERFIL</a>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
